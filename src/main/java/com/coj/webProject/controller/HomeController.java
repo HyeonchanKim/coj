@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class HomeController {
 
-	@GetMapping("/test")
+	@GetMapping("/")
 	public String homeView() {
-		return "home";
+		return "first";
 	}
 }
