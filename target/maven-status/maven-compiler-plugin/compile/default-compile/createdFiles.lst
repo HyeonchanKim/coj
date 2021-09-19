@@ -1,2 +1,7 @@
+com/coj/webProject/data/CojUser$CojUserBuilder.class
+com/coj/webProject/repository/CojUserRepository.class
+com/coj/webProject/data/CojUser.class
+com/coj/webProject/controller/CojUserController.class
 com/coj/webProject/WebProjectApplication.class
 com/coj/webProject/controller/HomeController.class
+com/coj/webProject/service/CojUserService.class
