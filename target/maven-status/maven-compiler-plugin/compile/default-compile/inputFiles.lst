@@ -1,5 +1,6 @@
 /home/chan/coj/src/main/java/com/coj/webProject/controller/HomeController.java
 /home/chan/coj/src/main/java/com/coj/webProject/controller/CojUserController.java
+/home/chan/coj/src/main/java/com/coj/webProject/service/CojUserService.java
 /home/chan/coj/src/main/java/com/coj/webProject/WebProjectApplication.java
 /home/chan/coj/src/main/java/com/coj/webProject/data/CojUser.java
 /home/chan/coj/src/main/java/com/coj/webProject/repository/CojUserRepository.java
