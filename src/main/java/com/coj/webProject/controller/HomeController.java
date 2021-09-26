@@ -10,6 +10,6 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String homeView() {
-		return "first";
+		return "home";
 	}
 }
