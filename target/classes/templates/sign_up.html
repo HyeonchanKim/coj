@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <!-- Required meta tags -->
@@ -28,31 +28,35 @@
     }
   </style>
 
-  <title>sign in</title>
-  <link href="css/signin.css" rel="stylesheet">
+  <title>sign up</title>
+  <link href="css/signup.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
 
   <main class="form-signin">
-    <form>
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-      <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
+    <form action="#" th:action="@{/signup}" th:object="${cojuser}" method = "post">
+      <h1 class="h3 mb-3 fw-normal">Please fill up the blanks</h1>
+      
+	  <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Name" th:filed="*{name}">
+        <label for="floatingInput">name</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="text" class="form-control" id="floatingInput" placeholder="ID" th:filed="*{id}">
+        <label for="floatingInput">ID</label>
+      </div>
+      
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" th:filed="*{pw}">
         <label for="floatingPassword">Password</label>
       </div>
+      
+      <input type="hidden" value = "null" id = "account_creation" th:filed="*{account_creation}">
+      <input type="hidden" value = "null" id = "last_login" th:filed="*{last_login}">
+      <input type="hidden" value = "0" id = "admin" th:filed="*{admin}">
 
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
     </form>
   </main>
