@@ -15,7 +15,11 @@ public class CojUserService {
 
 	public List<CojUser> findAll() {
 		List<CojUser> cojUserList = cojUserRepository.findAll();
-
 		return cojUserList;
+	}
+	
+	public void save(CojUser cojuser) {
+		cojUserRepository.save(cojuser);
+		return;
 	}
 }

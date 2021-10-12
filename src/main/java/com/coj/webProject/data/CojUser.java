@@ -46,5 +46,11 @@ public class CojUser {
 		this.lastLogin = lastLogin;
 		this.admin = admin;
 	}
+
+	public CojUser() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
 }
 
